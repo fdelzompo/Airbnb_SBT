@@ -8,7 +8,14 @@
 # but not really actively using any of his functions.
 # endorsing scraping the AirBnB website.
 #*****************************************************************************************
-
+require(tidyverse)
+require(cldr)
+require(stringr)
+require(purrr)
+require(rvest)
+require(ggthemes)
+require(ggmap)
+require(leaflet)
 
 
 
@@ -104,7 +111,7 @@ Get_info_users <- function(user){
 
 '%!in%' <- function(x,y)!('%in%'(x,y))
 
-# 
+
 # Get_info_users('/users/show/42292389')
 # paste0(Listings_in_SBT[34],'?&check_in=2017-07-30&check_out=2017-08-05')
 # 

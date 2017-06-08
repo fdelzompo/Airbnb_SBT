@@ -10,23 +10,16 @@ library(shiny)
 shinyUI(fluidPage(
 
   # Application title
-  titlePanel("San Benedetto del Tronto - AirBnB Analytics"),
-
-  # # Sidebar with a slider input for number of bins
-  # sidebarLayout(
-  #   sidebarPanel(
-  #     sliderInput("bins",
-  #                 "Number of bins:",
-  #                 min = 1,
-  #                 max = 50,
-  #                 value = 30)
-  #   ),
-
-    # Show a plot of the generated distribution
-    mainPanel(
-      plotOutput("distPlot"),
-      leafletOutput("mymap")
+  # titlePanel("San Benedetto del Tronto - AirBnB Analytics"),
+    fluidRow(
+      column(6,
+             plotOutput("distPlot")  
+       ),
+      column(6,
+             leafletOutput("mymap")
+      )
     )
+      
+    
   )
 )
-# )

@@ -16,3 +16,4 @@ Comments_SBT %>%
                 mutate(Authors = if_else(Authors == 'No_reviews','No_reviews','With_reviews'))%>%
                 group_by(Authors)%>%
                 summarise(n = n())
+
