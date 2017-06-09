@@ -7,6 +7,7 @@ require(rvest)
 require(ggthemes)
 require(ggmap)
 require(leaflet)
+require(jsonlite)
 source('airbnb.r')
 
 # Step 0 - Create session on Airbnb
@@ -55,6 +56,7 @@ Comments_SBT$Language <- detectLanguage(Comments_SBT$Comments)$detectedLanguage 
 Comments_SBT$Language[Comments_SBT$Authors == 'No_reviews'] <- 'No_reviews'
 Comments_SBT$Language <- Comments_SBT$Language %>% as.factor()
 Comments_SBT$Date <- parse_date(Comments_SBT$Date, '%B %Y')
+
 
 #Step 4 - Get information about users
 User_info <- NULL

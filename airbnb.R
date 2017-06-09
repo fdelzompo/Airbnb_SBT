@@ -11,11 +11,12 @@
 require(tidyverse)
 require(cldr)
 require(stringr)
-require(purrr)
 require(rvest)
 require(ggthemes)
 require(ggmap)
 require(leaflet)
+require(tidytext)
+require(wordcloud)
 
 
 
